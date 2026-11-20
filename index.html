@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Astronomy Career Bottlenecks</title>
+<style>
+:root{--ink:#193648;--muted:#526878;--paper:#f5f6f2;--line:#d7dfdc;--teal:#007b72;--soft:#eaf3ef}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1450px;margin:auto;padding:30px 28px 55px}h1{font-size:clamp(1.9rem,3.8vw,3rem);line-height:1.13;letter-spacing:-.04em;max-width:920px;margin:9px 0 15px}h2{font-size:1.2rem;line-height:1.3;margin:0 0 9px}h3{font-size:.96rem;margin:0 0 5px}p{margin:0 0 12px}.kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}.lead{max-width:960px;color:var(--muted);font-size:1.05rem}.source-note{padding:14px 18px;border-left:4px solid var(--teal);background:var(--soft);border-radius:0 9px 9px 0;margin:20px 0;font-size:.86rem}.source-note p:last-child{margin-bottom:0}a{color:#006e81}.small{font-size:.8rem;color:var(--muted)}button,input,select{font:inherit}button,select{cursor:pointer}button{background:white;border:1px solid var(--line);border-radius:8px;color:var(--ink);padding:8px 11px;font-size:.84rem;min-height:37px}button:hover{background:var(--soft);border-color:var(--teal)}input[type=range]{width:100%;accent-color:var(--teal);min-height:28px}input[type=checkbox]{accent-color:var(--teal);width:16px;height:16px}input[type=number]{width:100%;max-width:115px;padding:6px;border:1px solid #aebfc2;border-radius:6px}select{max-width:100%;border:1px solid #aebfc2;border-radius:7px;padding:6px;background:white;color:var(--ink)}:focus-visible{outline:3px solid #cb6400;outline-offset:3px}.scenario-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:12px}.scenario{padding:13px;text-align:left;display:grid;gap:6px;align-content:start;min-height:102px}.scenario span:first-child{font-weight:600}.scenario span:last-child{font-size:.77rem;color:var(--muted)}.scenario[aria-pressed=true]{border:2px solid var(--teal);padding:12px;background:var(--soft)}.scenario-guide{font-size:.87rem;max-width:1100px;margin-bottom:23px}.layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:21px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:13px;padding:18px;margin-bottom:17px}.control{padding:13px 0;border-bottom:1px solid #e8edea}.control:last-child{border-bottom:0;padding-bottom:0}.control label{font-size:.84rem;display:block;margin-bottom:5px}.control output{font-size:1.14rem;font-weight:600}.control .baseline-value{font-size:.76rem;color:var(--muted);margin-left:7px}.control p{font-size:.76rem;color:var(--muted);margin:3px 0 0}.control input[type=range]{display:block}.assumed{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.section-head{display:flex;justify-content:space-between;align-items:start;gap:15px;flex-wrap:wrap;margin-bottom:13px}.section-head p{margin-bottom:0}.section-head label{font-size:.78rem;display:grid;gap:4px}.outcomes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-bottom:17px}.outcome{background:white;border:1px solid var(--line);border-radius:11px;padding:14px}.outcome .label{font-size:.8rem;display:block;min-height:3em}.outcome .value{font-size:1.9rem;letter-spacing:-.04em;display:block;line-height:1.3}.outcome .compare{font-size:.77rem;color:var(--muted)}.plot{width:100%;display:block}.plot text{fill:var(--muted);font-size:12px}.plot .grid{stroke:#dbe4df;stroke-width:1}.plot .series{fill:none;stroke-width:3}.plot .baseline{stroke-dasharray:8 5;stroke-width:2.4;opacity:.75}.plot .policy{stroke:#8d7259;stroke-dasharray:3 4}.legend{display:flex;gap:8px 16px;flex-wrap:wrap;margin:8px 0 10px;font-size:.76rem}.legend span{display:inline-flex;align-items:center;gap:6px}.legend svg{width:28px;height:15px}.check{display:flex;align-items:center;gap:7px;font-size:.8rem;margin-bottom:10px}.inspect{display:flex;align-items:center;gap:12px;font-size:.84rem;margin-top:12px}.inspect input{flex:1;min-width:50px}.six-boxes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:14px 0}.role-box{border:1px solid var(--line);border-top:4px solid var(--role);padding:11px;border-radius:8px}.role-box .name{display:block;font-size:.77rem;min-height:3em}.role-box .count{display:block;font-size:1.45rem;line-height:1.3}.role-box .small{font-size:.72rem}.scroll{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap;font-size:.77rem}th,td{text-align:right;border-bottom:1px solid #e3e9e5;padding:8px}th:first-child,td:first-child{text-align:left}th{background:#f2f5f2}caption{text-align:left;padding-bottom:9px;color:var(--muted);font-size:.77rem;white-space:normal}details{margin-top:12px}summary{cursor:pointer;font-size:.88rem;padding:5px 0}details>div{padding-top:10px}.sankey{min-width:650px;width:100%;display:block}.sankey text{font-size:12px;fill:var(--ink)}.sankey .stock{font-size:10px;fill:var(--muted)}.sankey .link{fill:none;stroke-opacity:.35}.sankey .link:hover,.sankey .link:focus{stroke-opacity:.85}.assumptions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.assumptions label{font-size:.79rem;display:grid;gap:4px}.assumptions label span{font-size:.72rem;color:var(--muted)}.method{font-size:.84rem;padding-left:21px}.method li{margin-bottom:8px}.error{background:#fff0eb;border:1px solid #bd7c65;border-radius:8px;padding:12px;color:#732e1a;margin-bottom:15px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.results{min-width:0}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}[hidden]{display:none!important}.footer{font-size:.76rem;color:var(--muted);margin-top:22px}
+@media(max-width:1000px){main{padding:22px 18px}.layout{grid-template-columns:260px minmax(0,1fr)}.six-boxes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){main{padding:22px 14px}.layout{display:block}.scenario-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.assumptions{grid-template-columns:repeat(2,minmax(0,1fr))}.panel{padding:15px}}
+@media(max-width:400px){.outcomes,.assumptions{grid-template-columns:1fr}}
+@media print{.controls,.scenario-grid,.toolbar,input,button,.check{display:none!important}.layout{display:block}.panel,.outcome{break-inside:avoid}body{background:white}}
+.mechanism-rules{padding:0 0 0 20px;font-size:.88rem;margin:10px 0 16px}.mechanism-rules li{margin-bottom:7px}.mechanism-counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0}.mechanism-card{background:var(--soft);border-radius:8px;padding:12px}.mechanism-card h3{font-size:.78rem;min-height:3em;font-weight:400}.mechanism-card .value{display:block;font-size:1.7rem;line-height:1.3}.mechanism-card .compare{font-size:.75rem;color:var(--muted)}#more-details>div{padding-top:12px}
+.results{background:#fff;padding:24px}
+[data-flow-chart]{background:transparent;border:0;border-bottom:1px solid #e8e8e8;border-radius:0;padding:22px 0 28px;margin-bottom:8px}
+[data-flow-chart] h2{color:#333;font-size:1.05rem;font-weight:500;line-height:1.45;letter-spacing:0;margin-bottom:12px}
+[data-flow-chart] .legend{color:#555;font-size:.75rem;gap:8px 18px;margin:0 0 15px}
+[data-flow-chart] .plot text{fill:#777;font-size:11.5px}
+[data-flow-chart] .plot .axis-label{fill:#777;font-size:11px}
+[data-flow-chart] .plot .grid{stroke:#ededed;stroke-width:.7;vector-effect:non-scaling-stroke}
+[data-flow-chart] .plot .series{stroke-width:2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+[data-flow-chart] .plot .baseline{stroke-width:1.5;stroke-dasharray:5 4;opacity:.5}
+[data-flow-chart] .plot .policy{stroke:#aaa;stroke-width:.8;stroke-dasharray:3 4;vector-effect:non-scaling-stroke}
+[data-flow-chart] p.small{color:#777;font-size:.77rem;line-height:1.65;margin-top:12px;max-width:76ch}
+[data-flow-chart] summary{font-size:.75rem;color:#777}
+@media(max-width:760px){.results{padding:18px 12px}[data-flow-chart]{padding:18px 0 24px}}
+</style>
+</head>
+<body>
+<a href="#results" class="sr-only">Skip to results</a>
+<main>
+<p class="kicker">U.S. astronomy pipeline / PhD admissions and careers / annual steps</p>
+<h1>Where do astronomy career bottlenecks send people?</h1>
+<p class="lead">Choose a scenario and move a slider. Three plots show how annual admissions, doctorate completions, and hiring change over time.</p>
+<div class="source-note">
+<p>Illustrative model, not a national forecast. Starting enrollment uses <a href="https://ncses.nsf.gov/pubs/nsf26307/assets/data-tables/tables/nsf26307-tab002-004.xlsx" target="_blank" rel="noopener">GSS 2024</a>: 1,638 doctoral students and 747 postdocs. Future applications, funding, and hiring are assumptions.</p>
+</div>
+<h2>Try one change</h2>
+<div id="scenarios" class="scenario-grid" role="group" aria-label="Intervention comparisons"></div>
+<div id="error" class="error" role="alert" hidden></div>
+<div class="layout">
+<aside class="controls">
+<div class="panel">
+<h2>PhD intake growth</h2>
+<p class="small">Annual percentage growth, applied to both paths. Set 0 for no growth.</p>
+<div id="growth-assumptions" class="assumptions" style="grid-template-columns:1fr"></div>
+<details><summary>Why the 3.7% default?</summary>
+<p class="small">Default: 3.7% per year, informed by doctoral enrollment in astronomy/astrophysics units growing from 1,236 in 2017 to 1,648 in 2025 (<a href="https://ncses.nsf.gov/pubs/nsf27303/assets/data-tables/tables/nsf27303-tab001-003.xlsx" target="_blank" rel="noopener">GSS Table 1-3</a>). Growth in 2024-25 was only 0.6%. Applying an enrollment trend to future funded starts is an assumption, not a forecast or a measured admissions rate.</p>
+</details>
+</div>
+<div class="panel">
+<h2>Change the intervention</h2>
+<p class="small">Sliders change the intervention. "Do nothing" keeps the baseline assumptions.</p>
+<div id="controls"></div>
+</div>
+<div class="panel">
+<h3>Timing</h3>
+<div class="control"><label for="policy-start">Start the change after year</label><input id="policy-start" type="number" min="1" max="10" step="1" value="4"><p>Both paths are identical before the change.</p></div>
+<div class="control"><label for="horizon">Show years</label><select id="horizon"><option value="20">20</option><option value="30">30</option></select></div>
+<div class="toolbar" style="margin-top:14px"><button id="baseline-only">Do nothing</button><button id="reset">Reset</button></div>
+</div>
+</aside>
+<section class="results" id="results" aria-label="Scenario results">
+<h2>Annual flows through the system</h2>
+<p class="small">Counts per year, not cumulative totals or the number currently in a career stage.</p>
+<label class="check" for="show-baseline"><input id="show-baseline" type="checkbox" checked>Dashed: do nothing. Solid: intervention.</label>
+<p id="growth-note" class="small"></p>
+<div class="panel" data-flow-chart="admissions">
+<h2>Who gets a PhD place each year?</h2>
+<div id="legend-admissions" class="legend"></div>
+<div id="plot-admissions"></div>
+<p id="note-admissions" class="small"></p>
+<details><summary>Annual values</summary><p id="caption-admissions" class="small"></p><div id="table-admissions" class="scroll"></div></details>
+</div>
+<div class="panel" data-flow-chart="academic">
+<h2>Doctorates completed and academic jobs filled each year</h2>
+<div id="legend-academic" class="legend"></div>
+<div id="plot-academic"></div>
+<p id="note-academic" class="small"></p>
+<details><summary>Annual values</summary><p id="caption-academic" class="small"></p><div id="table-academic" class="scroll"></div></details>
+</div>
+<div class="panel" data-flow-chart="outside">
+<h2>Jobs outside academia each year</h2>
+<div id="legend-outside" class="legend"></div>
+<div id="plot-outside"></div>
+<p id="note-outside" class="small"></p>
+<details><summary>Annual values</summary><p id="caption-outside" class="small"></p><div id="table-outside" class="scroll"></div></details>
+</div>
+<div class="panel" id="mechanism-panel">
+<h2>How the change works</h2>
+<p id="scenario-guide" class="small"></p>
+<ul id="mechanism-rules" class="mechanism-rules"></ul>
+<p id="mechanism-timing" class="small"></p>
+</div>
+<details class="panel" id="more-details">
+<summary>More detail: annual flows and search reasons</summary>
+<div>
+<h3>Search outcomes at the end of the run</h3>
+<p class="small">These are modeled reasons, not causes established by the employment surveys.</p>
+<div id="reasons-table" class="scroll"></div>
+<p id="boundary-note" class="small" style="margin-top:12px"></p>
+<h3 style="margin-top:18px">Both scenarios, every year</h3>
+<button id="export">Download annual CSV</button>
+<div id="annual-table" class="scroll" style="margin-top:12px"></div>
+</div>
+</details>
+</section>
+</div>
+<section class="panel">
+<details id="assumptions-details">
+<summary>Shared assumptions and limits</summary>
+<div>
+<p class="small">The following are illustrative assumptions, applied to both paths. Preferences and hiring openings have not been estimated from the opening headcounts.</p>
+<div id="assumptions" class="assumptions"></div>
+<ul class="method">
+<li>This is a deterministic, annual dynamical system. Each year's training cohorts, searches, and occupied jobs feed the following year's transitions. It follows the opening students and postdocs plus later PhD applicants, not the whole U.S. astronomy workforce.</li>
+<li>Annual PhD applicants are unique people seeking a place, not application forms or all bachelor's graduates. New admissions are limited by the planned funded annual intake. Nonadmitted applicants remain counted, but their later careers and repeat applications are not modeled.</li>
+<li>Annual funded starts before staff transfer equal the starting intake times (1 + growth percent / 100) raised to (year - 1). Growth uses the same calendar in both paths; it does not restart when the intervention begins. Applicants, postdoc places, and job openings stay at their separate assumptions. More funding alone cannot create applicants.</li>
+<li>Annual intake changes new cohorts only. Existing students finish on their original schedule. With a fixed doctoral duration, a change to starts affects completions that many years later. This is an illustrative delay, not a measured prediction. Current funded intake times doctoral duration describes enrollment only if that intake remained constant and enough applicants were available; it is not a forecast under growth.</li>
+<li>For this demonstration, related work outside academia means astronomy/space-related work, such as government research or space-focused industry. A general technology job is not automatically classified as astronomy-related. All opening counts for those job categories are assumptions.</li>
+<li>Opening students and postdocs are spread evenly across remaining training years. Everyone in the doctoral stage completes after the assumed fixed duration. This omits noncompletion and does not infer a graduation rate from a completer median.</li>
+<li>Academic applicants include interested postdocs and doctorate completers. Continuing openings are filled proportionally among eligible applicants. Postdocs already employed can finish their remaining modeled time even when new capacity is lower.</li>
+<li>Someone who wants academia first seeks a continuing role or a postdoc. After the postdoc limit or the assumed waiting window, an unsuccessful applicant stops the academic search and seeks astronomy-related work outside academia.</li>
+<li>Someone who voluntarily leaves the academic route chooses related work or another career according to the shared preference assumption. Related-job seekers try for the assumed waiting window, then broaden their search to other work. Unmatched applicants remain visible in the search pool.</li>
+<li>The matching probability is the fraction of a candidate pool expected to match each year, capped by the number of openings. Career preparation can change this assumed probability but cannot create openings. An unsuccessful search can reflect limited positions or matching friction.</li>
+<li>Each year's planned starts before staff transfer times doctoral duration define that year's reserved recurring training-support budget. Each requested staff position reduces funded annual starts by its relative support cost divided by doctoral duration. Staff hiring waits until occupied doctoral places and staff support fit that budget. Growing budgets or vacant funded places can release support too, so funding growth can bring staff hiring forward. Lower budgets can temporarily be exceeded while existing students finish; they are not dismissed. Funders are assumed to permit transfers. Support costs do not measure scientific output.</li>
+<li>Existing faculty, permanent staff, and earlier leavers are not reconstructed. Later international recruitment directly into postdocs, emigration, and other-field career changes are omitted. There is no predoc program, national workforce calibration, dollar budget, retirement model, or forecast of future funding.</li>
+</ul>
+<p class="small">Measured opening counts: GSS 2024, Table 2-4, row 60, columns G and L. Its academic-unit field definition differs from AIP department rosters and SED doctorate fields. Those series are not combined into a single inferred population.</p>
+</div>
+</details>
+</section>
+<p class="footer">This demonstration explains mechanisms under declared assumptions. It does not estimate how many real astronomers were forced out. Deterministic fractional cohorts can produce fractional people.</p>
+</main>
+<script>(function (root) {
+  "use strict";
+  const EPS = 1e-9;
+  const roles = {
+    D: "Doctoral students", P: "Postdocs", A: "Continuing academic astronomy",
+    R: "Astronomy-related work outside academia", O: "Other careers", Q: "Seeking work",
+    N: "No PhD admission"
+  };
+  const origins = {
+    D0: "Doctoral students at year 0",
+    P0: "Postdocs at year 0",
+    later: "Later PhD applicants"
+  };
+  const observed = Object.freeze({ D: 1638, P: 747, year: 2024 });
+  const defaults = Object.freeze({
+    applicants: 300, annualAdmissions: 273, admissionsGrowthPercent: 3.7,
+    staffPositions: 0, relatedOpenings: 100, matchRate: .6,
+    academicOpenings: 50, postdocPlaces: 747, otherOpenings: 300,
+    academicPreference: .75, relatedPreference: .6, phdYears: 6, postdocYears: 6,
+    academicWait: 2, relatedWait: 2, staffCost: 2, policyStart: 4, horizon: 20
+  });
+  const sum = xs => xs.reduce((a, b) => a + b, 0);
+  const copy = x => JSON.parse(JSON.stringify(x));
+  function validate(p) {
+    for (const key of Object.keys(defaults)) {
+      if (typeof p[key] !== "number" || !Number.isFinite(p[key]) || p[key] < 0)
+        throw new Error(key + " must be a finite, nonnegative number.");
+    }
+    for (const key of ["matchRate", "academicPreference", "relatedPreference"])
+      if (p[key] > 1) throw new Error(key + " must be between zero and one.");
+    if (p.admissionsGrowthPercent > 10)
+      throw new Error("Annual growth in funded PhD starts must be between 0 and 10 percent.");
+    for (const key of ["phdYears", "postdocYears", "academicWait", "relatedWait", "policyStart", "horizon"])
+      if (!Number.isInteger(p[key])) throw new Error(key + " must be a whole number.");
+    for (const key of ["phdYears", "postdocYears", "academicWait", "relatedWait", "staffCost"])
+      if (p[key] <= 0) throw new Error(key + " must be positive.");
+    if (p.horizon < 1 || p.horizon > 40 || p.policyStart > p.horizon)
+      throw new Error("Choose a horizon from 1 to 40, with the policy inside it.");
+    return p;
+  }
+  function summarize(chunks) {
+    const stocks = Object.fromEntries(Object.keys(roles).map(key => [key, 0]));
+    const destinations = { choice: { R: 0, O: 0, Q: 0 }, blocked: { R: 0, O: 0, Q: 0 } };
+    let academicQueue = 0, relatedQueue = 0;
+    for (const c of chunks) {
+      stocks[c.role] += c.n;
+      if (c.role === "Q" && c.route === "academic") academicQueue += c.n;
+      if (c.role === "Q" && c.route === "R") relatedQueue += c.n;
+      if (destinations[c.reason] && ["R", "O", "Q"].includes(c.role))
+        destinations[c.reason][c.role] += c.n;
+    }
+    return { ...stocks, total: sum(Object.values(stocks)), academicQueue, relatedQueue, destinations };
+  }
+  function initialize(p) {
+    validate(p);
+    const chunks = [];
+    for (let rem = 1; rem <= p.phdYears; rem++)
+      chunks.push({ role: "D", origin: "D0", n: observed.D / p.phdYears, rem });
+    for (let used = 0; used < p.postdocYears; used++) {
+      chunks.push({ role: "P", origin: "P0", n: observed.P / p.postdocYears * p.academicPreference, used, wantsAcademic: true });
+      chunks.push({ role: "P", origin: "P0", n: observed.P / p.postdocYears * (1 - p.academicPreference), used, wantsAcademic: false });
+    }
+    return {
+      chunks,
+      staffHired: 0, entered: 0, applied: 0, graduates: 0,
+      academicBlocked: 0, academicChoice: 0, astronomyBlocked: 0,
+      relatedSeekers: 0
+    };
+  }
+  function advance(old, p, year) {
+    const state = {
+      ...old, chunks: [], entered: old.entered,
+      graduates: old.graduates
+    };
+    const flows = {}, academic = [], outside = [], newChunks = new Map();
+    const row = {
+      year: year + 1, entrants: 0, graduatesThisYear: 0,
+      applicantsThisYear: p.applicants, notAdmittedThisYear: 0,
+      academicApplicants: 0, academicOpenings: 0, academicHires: 0,
+      relatedOpenings: p.relatedOpenings, relatedHires: 0, otherHires: 0,
+      blockedThisYear: 0, astronomyBlockedThisYear: 0, staffHiresThisYear: 0,
+      flows
+    };
+    function put(c, n, role, fields = {}) {
+      if (n <= EPS) return;
+      const next = { role, origin: c.origin, ...fields };
+      const key = JSON.stringify(next);
+      if (!newChunks.has(key)) newChunks.set(key, { ...next, n: 0 });
+      newChunks.get(key).n += n;
+      const route = c.role + " → " + role;
+      flows[route] = (flows[route] || 0) + n;
+    }
+    function leaveAcademic(c, reason) {
+      if (reason === "blocked") { state.academicBlocked += c.n; row.blockedThisYear += c.n; }
+      else state.academicChoice += c.n;
+      const share = reason === "blocked" ? 1 : p.relatedPreference;
+      state.relatedSeekers += c.n * share;
+      if (share > 0) outside.push({ ...c, n: c.n * share, route: "R", reason, wait: 0, relatedBlocked: false });
+      if (share < 1) outside.push({ ...c, n: c.n * (1 - share), route: "O", reason, wait: 0, relatedBlocked: false });
+    }
+    for (const c of old.chunks) {
+      if (c.role === "D") {
+        if (c.rem > 1) put(c, c.n, "D", { rem: c.rem - 1 });
+        else {
+          row.graduatesThisYear += c.n; state.graduates += c.n;
+          if (p.academicPreference > 0) academic.push({ ...c, n: c.n * p.academicPreference, used: 0, wait: 0 });
+          if (p.academicPreference < 1) leaveAcademic({ ...c, n: c.n * (1 - p.academicPreference) }, "choice");
+        }
+      } else if (c.role === "P") {
+        const next = { ...c, used: c.used + 1, wait: 0 };
+        if (c.wantsAcademic) academic.push(next);
+        else if (next.used < p.postdocYears) put(c, c.n, "P", { used: next.used, wantsAcademic: false });
+        else leaveAcademic(next, "choice");
+      } else if (c.role === "Q") {
+        if (c.route === "academic") academic.push({ ...c });
+        else outside.push({ ...c });
+      } else put(c, c.n, c.role, c.role === "A" ? {} : { reason: c.reason, relatedBlocked: !!c.relatedBlocked });
+    }
+
+    row.plannedAdmissions = p.annualAdmissions * (1 + p.admissionsGrowthPercent / 100) ** year;
+    const trainingSupport = row.plannedAdmissions * p.phdYears;
+    row.fundedAdmissions = Math.max(0, row.plannedAdmissions - p.staffPositions * p.staffCost / p.phdYears);
+    row.doctoralTarget = row.fundedAdmissions * p.phdYears;
+    row.entrants = Math.min(p.applicants, row.fundedAdmissions);
+    row.notAdmittedThisYear = p.applicants - row.entrants;
+    put({ role: "Boundary", origin: "later" }, row.entrants, "D", { rem: p.phdYears });
+    put({ role: "Boundary", origin: "later" }, row.notAdmittedThisYear, "N");
+    state.entered += row.entrants;
+    state.applied += p.applicants;
+    const doctoralStock = sum([...newChunks.values()].filter(c => c.role === "D").map(c => c.n));
+    row.enrollmentAboveTarget = Math.max(0, doctoralStock - row.doctoralTarget);
+    const releasedSupport = Math.max(0, trainingSupport - doctoralStock);
+    row.staffFundable = Math.min(p.staffPositions, releasedSupport / p.staffCost);
+    const extraOpenings = Math.max(0, row.staffFundable - old.staffHired);
+    row.academicOpenings = p.academicOpenings + extraOpenings;
+    row.academicApplicants = sum(academic.map(c => c.n));
+    row.academicHires = Math.min(row.academicOpenings, row.academicApplicants);
+    const academicFraction = row.academicApplicants ? row.academicHires / row.academicApplicants : 0;
+    const remaining = [];
+    for (const c of academic) {
+      put(c, c.n * academicFraction, "A");
+      if (c.n * (1 - academicFraction) > EPS) remaining.push({ ...c, n: c.n * (1 - academicFraction) });
+    }
+    row.staffHiresThisYear = Math.min(extraOpenings, Math.max(0, row.academicHires - p.academicOpenings));
+    state.staffHired += row.staffHiresThisYear;
+    const postdocApplicants = [];
+    for (const c of remaining) {
+      if (c.role === "P" && c.used < p.postdocYears)
+        put(c, c.n, "P", { used: c.used, wantsAcademic: true });
+      else if (c.used < p.postdocYears) postdocApplicants.push(c);
+      else leaveAcademic(c, "blocked");
+    }
+    const occupied = sum([...newChunks.values()].filter(c => c.role === "P").map(c => c.n));
+    const pool = sum(postdocApplicants.map(c => c.n));
+    const postdocHires = Math.min(pool, Math.max(0, p.postdocPlaces - occupied));
+    const postdocFraction = pool ? postdocHires / pool : 0;
+    for (const c of postdocApplicants) {
+      put(c, c.n * postdocFraction, "P", { used: c.used, wantsAcademic: true });
+      const n = c.n * (1 - postdocFraction);
+      if (n > EPS) {
+        if (c.wait + 1 >= p.academicWait) leaveAcademic({ ...c, n }, "blocked");
+        else put(c, n, "Q", { route: "academic", wait: c.wait + 1, used: c.used });
+      }
+    }
+    function matchOutside(route, capacity) {
+      const candidates = outside.filter(c => c.route === route);
+      const amount = sum(candidates.map(c => c.n));
+      const placed = Math.min(capacity, amount * p.matchRate);
+      const fraction = amount ? placed / amount : 0;
+      for (const c of candidates) {
+        const hired = c.n * fraction;
+        put(c, hired, route, { reason: c.reason, relatedBlocked: !!c.relatedBlocked });
+        if (route === "O" && c.relatedBlocked) {
+          state.astronomyBlocked += hired; row.astronomyBlockedThisYear += hired;
+        }
+        const n = c.n - hired;
+        if (n <= EPS) continue;
+        if (route === "R" && c.wait + 1 >= p.relatedWait)
+          outside.push({ ...c, n, route: "O", wait: 0, relatedBlocked: true });
+        else put(c, n, "Q", {
+          route, reason: c.reason, wait: route === "R" ? c.wait + 1 : 0,
+          relatedBlocked: !!c.relatedBlocked
+        });
+      }
+      return placed;
+    }
+    row.relatedHires = matchOutside("R", p.relatedOpenings);
+    row.otherHires = matchOutside("O", p.otherOpenings);
+    state.chunks = [...newChunks.values()];
+    const stocks = summarize(state.chunks);
+    row.postdocOverhang = Math.max(0, stocks.P - p.postdocPlaces);
+    return {
+      state, row: {
+        ...row, ...stocks, entered: state.entered, applied: state.applied, graduates: state.graduates,
+        staffHired: state.staffHired, academicBlocked: state.academicBlocked,
+        academicChoice: state.academicChoice, astronomyBlocked: state.astronomyBlocked,
+        relatedSeekers: state.relatedSeekers
+      }
+    };
+  }
+  function run(p, opening, baseline = p) {
+    validate(p); validate(baseline);
+    let state = copy(opening);
+    const rows = [{
+      year: 0, ...summarize(state.chunks), flows: {}, entrants: 0,
+      applicantsThisYear: 0, notAdmittedThisYear: 0, plannedAdmissions: null, fundedAdmissions: null,
+      doctoralTarget: baseline.annualAdmissions * baseline.phdYears,
+      enrollmentAboveTarget: Math.max(0, observed.D - baseline.annualAdmissions * baseline.phdYears),
+      graduatesThisYear: 0, academicApplicants: null, academicOpenings: null,
+      academicHires: 0, relatedOpenings: null, relatedHires: 0, otherHires: 0,
+      blockedThisYear: 0, astronomyBlockedThisYear: 0, staffHiresThisYear: 0,
+      entered: 0, applied: 0, graduates: 0, staffHired: 0, staffFundable: 0,
+      academicBlocked: 0, academicChoice: 0, astronomyBlocked: 0, relatedSeekers: 0
+    }];
+    for (let year = 0; year < p.horizon; year++) {
+      const step = advance(state, year < p.policyStart ? baseline : p, year);
+      rows.push(step.row); state = step.state;
+    }
+    const endpoints = Object.fromEntries(Object.keys(origins).map(key =>
+      [key, Object.fromEntries(Object.keys(roles).map(role => [role, 0]))]
+    ));
+    for (const c of state.chunks) endpoints[c.origin][c.role] += c.n;
+    return { rows, final: state, endpoints };
+  }
+  const api = { roles, origins, observed, defaults, validate, summarize, initialize, advance, run };
+  root.SimplePipeline = api;
+  if (typeof module !== "undefined" && module.exports) module.exports = api;
+})(typeof globalThis !== "undefined" ? globalThis : this);
+</script>
+<script>(function () {
+  "use strict";
+  const M = window.SimplePipeline, $ = id => document.getElementById(id);
+  const fmt = n => Number(n || 0).toLocaleString("en-US", { maximumFractionDigits: 1 });
+  const signed = n => Math.abs(n) < .05 ? "0" : (n > 0 ? "+" : "") + fmt(n);
+  const esc = x => String(x).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const palette = { D: "#4c78a8", P: "#8064a2", A: "#278572", R: "#718943", O: "#a66a3c", Q: "#9b526d", N: "#7d858b" };
+  const mainControls = [
+    ["annualAdmissions", "Year-1 PhD starts / year, before staff transfer", 0, 600, 1, "Starting intake plan, compounded by the shared growth rate. Existing students finish.", n => fmt(n)],
+    ["staffPositions", "Added continuing staff positions", 0, 200, 10, "Total positions, not new positions every year. Reallocate recurring training support.", n => fmt(n)],
+    ["relatedOpenings", "Related openings outside academia / year", 0, 300, 10, "Accessible astronomy-related openings, including replacement hiring.", n => fmt(n)],
+    ["matchRate", "Outside-job matching probability", 0, 1, .05, "An assumed preparation effect, not an observed program benefit. Openings stay finite.", n => fmt(n * 100) + "%"]
+  ];
+  const sharedControls = [
+    ["admissionsGrowthPercent", "Annual growth in funded PhD starts, %", 0, 10, .1, "Projection assumption for both paths. Year 1 uses the starting intake; each later year compounds this rate. Set 0 for flat intake."],
+    ["applicants", "New PhD applicants / year", 0, 3000, 1, "Assumed unique people seeking an astronomy PhD, not application forms or all bachelor's graduates. Each applies once in this model."],
+    ["academicOpenings", "Continuing academic openings / year", 0, 250, 1, "Faculty and continuing research staff, excluding the added staff intervention."],
+    ["postdocPlaces", "Funded postdoc places", 0, 1500, 1, "Capacity assumption; seeded at the measured opening count."],
+    ["otherOpenings", "Other-career openings / year", 0, 1000, 10, "Offers accessible to this tracked group, not all U.S. job vacancies."],
+    ["academicPreference", "Fraction preferring an academic career", 0, 1, .05, "Unknown empirically here; not inferred from observed job destinations."],
+    ["relatedPreference", "Voluntary leavers preferring related work", 0, 1, .05, "Other voluntary leavers choose other careers directly."],
+    ["phdYears", "Fixed doctoral duration, years", 3, 10, 1, "Simplifies timing; assumes completion for every modeled entrant."],
+    ["postdocYears", "Maximum cumulative postdoc years", 1, 10, 1, "An assumed limit, not a universal astronomy policy."],
+    ["academicWait", "Years seeking a postdoc before broadening", 1, 5, 1, "Applies when no postdoc is obtained; the postdoc limit is separate."],
+    ["relatedWait", "Years seeking related work before broadening", 1, 5, 1, "After this window, unmatched people seek other work."],
+    ["staffCost", "Staff support cost / doctoral support cost", 1, 4, .25, "Illustrative recurring cost ratio; not equal scientific output."]
+  ];
+  const cases = {
+    staff: {
+      title: "Fund continuing research careers", changes: { staffPositions: 100 },
+      blurb: "Shift recurring support from training places into 100 staff positions.",
+      guide: "Shift support from new PhD cohorts into continuing staff jobs. Existing students finish, so staff jobs phase in."
+    },
+    intake: {
+      title: "Reduce PhD admissions", changes: { annualAdmissions: 205 },
+      blurb: "Use 205 rather than 273 as the starting annual intake, with the same growth rate.",
+      guide: "Change new cohorts without adding jobs. Watch how long it takes for graduate numbers to respond."
+    },
+    jobs: {
+      title: "Add related jobs outside academia", changes: { relatedOpenings: 160 },
+      blurb: "Increase accessible related openings from 100 to 160 per year.",
+      guide: "Add astronomy-related openings beyond universities. PhD admissions and academic openings stay unchanged."
+    },
+    preparation: {
+      title: "Improve career preparation", changes: { matchRate: .9 },
+      blurb: "Assume matching rises from 60% to 90%, without adding openings.",
+      guide: "Improve matching to existing jobs without adding openings. Check whether people find related work or simply find other work sooner."
+    }
+  };
+  const fresh = () => ({
+    knobs: Object.fromEntries(mainControls.map(([key]) => [key, M.defaults[key]])),
+    shared: {}, selected: "staff"
+  });
+  let state = fresh(), outputs, params;
+  state.knobs.staffPositions = 100;
+  function table(headers, rows, caption) {
+    return `<table><caption>${esc(caption)}</caption><thead><tr>${headers.map(x => `<th scope="col">${esc(x)}</th>`).join("")}</tr></thead><tbody>${rows.map(row => `<tr>${row.map((x, i) => i ? `<td>${esc(x)}</td>` : `<th scope="row">${esc(x)}</th>`).join("")}</tr>`).join("")}</tbody></table>`;
+  }
+  function buildControls() {
+    $("scenarios").innerHTML = Object.entries(cases).map(([id, c]) => `<button class="scenario" data-case="${id}" aria-pressed="false"><span>${esc(c.title)}</span><span>${esc(c.blurb)}</span></button>`).join("");
+    for (const button of $("scenarios").querySelectorAll("button"))
+      button.onclick = () => applyCase(button.dataset.case);
+    $("controls").innerHTML = mainControls.map(([key, label, min, max, step, hint]) =>
+      `<div class="control"><span class="assumed">Assumed intervention</span><label for="input-${key}">${esc(label)}</label><output id="value-${key}" for="input-${key}"></output><span class="baseline-value" id="base-${key}"></span><input id="input-${key}" type="range" min="${min}" max="${max}" step="${step}"><p>${esc(hint)}</p></div>`
+    ).join("");
+    for (const [key] of mainControls) $("input-" + key).oninput = event => {
+      state.knobs[key] = Number(event.target.value); state.selected = null; recompute();
+    };
+    $("assumptions").innerHTML = sharedControls.map(([key, label, min, max, step, hint]) =>
+      `<label for="shared-${key}">${esc(label)}<input id="shared-${key}" type="number" min="${min}" max="${max}" step="${step}" required><span>${esc(hint)}</span></label>`
+    ).join("");
+    for (const key of ["admissionsGrowthPercent", "applicants"])
+      $("growth-assumptions").appendChild($("shared-" + key).closest("label"));
+    for (const [key, , min, max] of sharedControls) $("shared-" + key).onchange = event => {
+      const n = Number(event.target.value);
+      if (event.target.value === "" || !Number.isFinite(n) || n < min || n > max || !event.target.checkValidity()) {
+        event.target.setAttribute("aria-invalid", "true");
+        $("error").textContent = "Enter a valid shared assumption within the displayed bounds."; $("error").hidden = false;
+        return;
+      }
+      event.target.removeAttribute("aria-invalid");
+      state.shared[key] = n; recompute();
+    };
+  }
+  function refreshControls() {
+    for (const [key, , , , , , format] of mainControls) {
+      $("input-" + key).value = state.knobs[key];
+      $("value-" + key).textContent = format(state.knobs[key]);
+      $("base-" + key).textContent = "baseline " + format(params.baseline[key]);
+    }
+    for (const [key] of sharedControls) {
+      $("shared-" + key).value = params.baseline[key];
+      $("shared-" + key).removeAttribute("aria-invalid");
+    }
+    for (const button of $("scenarios").querySelectorAll("button"))
+      button.setAttribute("aria-pressed", String(button.dataset.case === state.selected));
+    $("policy-start").value = params.alternative.policyStart;
+    $("horizon").value = params.alternative.horizon;
+    $("scenario-guide").textContent = state.selected ? cases[state.selected].guide : "Custom comparison. The four sliders change the alternative; shared assumptions apply to both paths.";
+  }
+  function recompute() {
+    try {
+      const baseline = { ...M.defaults, ...state.shared };
+      const alternative = { ...baseline, ...state.knobs };
+      M.validate(baseline); M.validate(alternative);
+      const opening = M.initialize(baseline);
+      params = { baseline, alternative };
+      outputs = { baseline: M.run(baseline, opening, baseline), alternative: M.run(alternative, opening, baseline) };
+      $("error").hidden = true; refreshControls(); render();
+    } catch (error) { $("error").textContent = error.message; $("error").hidden = false; }
+  }
+  function applyCase(id) {
+    state.knobs = Object.fromEntries(mainControls.map(([key]) => [key, M.defaults[key]]));
+    if (cases[id]) Object.assign(state.knobs, cases[id].changes);
+    state.selected = cases[id] ? id : null;
+    recompute();
+  }
+  const chartDefinitions = {
+    admissions: {
+      title: "Who gets a PhD place each year?",
+      series: [
+        { key: "entrants", label: "Start a PhD", color: palette.D, square: false },
+        { key: "notAdmittedThisYear", label: "No PhD place", color: palette.N, square: false }
+      ],
+      note: "Each year's applicants split into new PhD starts and people without a place. These two lines add to that year's applicants within each scenario. Later careers and repeat applications of nonadmitted people are not modeled."
+    },
+    academic: {
+      title: "Doctorates completed and academic jobs filled each year",
+      series: [
+        { key: "graduatesThisYear", label: "Finish a PhD", color: palette.P, square: true },
+        { key: "academicHires", label: "Enter a continuing academic job", color: palette.A, square: false }
+      ],
+      note: "Annual doctorate completions versus actual hires into continuing academic jobs. Hires can come from postdocs and earlier job seekers as well as that year's graduates; the gap is not a count of graduates rejected that year. Added staff jobs create hiring openings while being filled, not the same number of new hires every year."
+    },
+    outside: {
+      title: "Jobs outside academia each year",
+      series: [
+        { key: "relatedOpenings", label: "Related job openings", color: palette.D, square: false },
+        { key: "relatedHires", label: "Find related work", color: palette.R, square: true },
+        { key: "otherHires", label: "Find other work", color: palette.O, square: false }
+      ],
+      note: "Actual yearly placements, with related openings shown as a capacity reference. Better matching can reduce waiting without adding jobs. When related openings are filled, better matching may increase other-career placements instead. Openings and placements overlap and must not be added."
+    }
+  };
+  function symbol(square, x, y, color, filled) {
+    const attributes = `fill="${filled ? color : "white"}" stroke="${color}" stroke-width="1"`;
+    return square ? `<rect x="${x - 2.5}" y="${y - 2.5}" width="5" height="5" ${attributes}/>` : `<circle cx="${x}" cy="${y}" r="2.5" ${attributes}/>`;
+  }
+  function renderPlot(kind, def) {
+    const arms = $("show-baseline").checked ? ["baseline", "alternative"] : ["alternative"];
+    const value = (row, key) => row.year === 0 ? null : row[key];
+    const display = n => n === null ? "n/a" : fmt(n);
+    const rawMax = Math.max(0, ...def.series.flatMap(s => ["baseline", "alternative"].flatMap(arm =>
+      outputs[arm].rows.map(r => value(r, s.key) || 0)
+    )));
+    const roughStep = Math.max(1, rawMax) / 4;
+    const magnitude = 10 ** Math.floor(Math.log10(roughStep));
+    const tickStep = Math.max(1, [1, 2, 2.5, 5, 10].find(n => n * magnitude >= roughStep) * magnitude);
+    const tickMax = Math.max(1, Math.ceil(rawMax / tickStep)) * tickStep;
+    const max = tickMax * 1.06;
+    const w = Math.max(260, Math.round($("plot-" + kind).clientWidth));
+    const h = w < 480 ? 250 : 300, left = 46, right = 16, top = 42, bottom = 37;
+    const x = n => left + n / params.alternative.horizon * (w - left - right);
+    const y = n => h - bottom - n / max * (h - top - bottom);
+    const policyX = x(params.alternative.policyStart);
+    let svg = `<svg class="plot" data-scale="people-per-year" viewBox="0 0 ${w} ${h}" role="img" aria-labelledby="${kind}-title ${kind}-desc"><title id="${kind}-title">${esc(def.title)}</title><desc id="${kind}-desc">People or openings per year. Solid lines show the alternative, dashed lines the baseline. Shapes and colors distinguish series. Tables supply the values. Year 0 is the opening population, with no preceding annual flow.</desc><text class="axis-label" x="${left}" y="13">People / year</text>`;
+    for (let n = 0; n <= tickMax; n += tickStep) {
+      svg += `<path class="grid" d="M${left} ${y(n)}H${w - right}"/><text class="y-tick" x="${left - 10}" y="${y(n) + 4}" text-anchor="end">${fmt(n)}</text>`;
+    }
+    for (let year = 0; year <= params.alternative.horizon; year += 5)
+      svg += `<text class="x-tick" x="${x(year)}" y="${h - 17}" text-anchor="middle">${year}</text>`;
+    svg += `<path class="policy" d="M${policyX} ${top - 8}V${h - bottom}"/><text class="axis-label" x="${Math.min(policyX + 5, w - right - 75)}" y="${top - 15}">Change starts</text>`;
+    for (const arm of arms) for (const s of def.series) {
+      const points = outputs[arm].rows.filter(r => value(r, s.key) !== null);
+      const path = points.map((r, i) => `${i ? "L" : "M"}${x(r.year).toFixed(2)} ${y(value(r, s.key)).toFixed(2)}`).join(" ");
+      svg += `<path class="series ${arm}" data-arm="${arm}" data-series="${s.key}" d="${path}" stroke="${s.color}"><title>${esc(s.label + ": " + arm)}</title></path>`;
+      const last = outputs[arm].rows.at(-1), n = value(last, s.key);
+      if (n !== null) svg += symbol(s.square, x(last.year), y(n), s.color, arm === "alternative");
+    }
+    svg += `<text class="axis-label" x="${w - right}" y="${h - 1}" text-anchor="end">Year</text></svg>`;
+    $("plot-" + kind).innerHTML = svg;
+    $("legend-" + kind).innerHTML = def.series.map(s => `<span><svg viewBox="0 0 28 15" aria-hidden="true"><path d="M0 7.5H28" stroke="${s.color}" stroke-width="1.5"/>${symbol(s.square, 14, 7.5, s.color, true)}</svg>${esc(s.label)}</span>`).join("");
+    $("note-" + kind).textContent = def.note;
+    $("caption-" + kind).textContent = `Final year ${params.alternative.horizon}: ` + def.series.map(s => {
+      const a = value(outputs.alternative.rows.at(-1), s.key), b = value(outputs.baseline.rows.at(-1), s.key);
+      return `${s.label}: alternative ${display(a)}, baseline ${display(b)}, difference ${signed(a - b)}`;
+    }).join("; ") + ".";
+    const headers = ["Year",
+      ...def.series.flatMap(s => [s.label + ": baseline", s.label + ": alternative", s.label + ": difference"])];
+    $("table-" + kind).innerHTML = table(headers, outputs.alternative.rows.map((row, i) => [
+      row.year,
+      ...def.series.flatMap(s => {
+        const a = value(row, s.key), b = value(outputs.baseline.rows[i], s.key);
+        return [display(b), display(a), a === null ? "n/a" : signed(a - b)];
+      })
+    ]), "Annual counts. Year 0 has no preceding annual flow.");
+  }
+  function renderPlots() {
+    for (const [kind, def] of Object.entries(chartDefinitions)) renderPlot(kind, def);
+  }
+  function renderMechanism() {
+    const p = params.alternative, b = params.baseline;
+    const rules = [], transfer = p.staffPositions * p.staffCost;
+    if (p.annualAdmissions !== b.annualAdmissions)
+      rules.push(`Use ${fmt(p.annualAdmissions)} rather than ${fmt(b.annualAdmissions)} as the year-1 annual intake, then apply the same growth rate. This changes new cohorts only and adds no jobs.`);
+    if (p.staffPositions !== b.staffPositions)
+      rules.push(`${fmt(p.staffPositions)} requested staff positions at ${fmt(p.staffCost)} times doctoral support cost require ${fmt(transfer)} support units. Spread over ${p.phdYears}-year PhDs, this reduces funded starts by up to ${fmt(transfer / p.phdYears)} per year. Funded starts cannot fall below zero. Staff hiring waits until support is available; growing budgets or unfilled training places can bring hiring forward.`);
+    if (p.relatedOpenings !== b.relatedOpenings)
+      rules.push(`Change related job openings from ${fmt(b.relatedOpenings)} to ${fmt(p.relatedOpenings)} per year. This lever changes outside hiring, not PhD admissions or academic jobs.`);
+    if (p.matchRate !== b.matchRate)
+      rules.push(`Change outside-job matching from ${fmt(b.matchRate * 100)}% to ${fmt(p.matchRate * 100)}% per year. Hiring still cannot exceed available openings.`);
+    $("mechanism-rules").innerHTML = (rules.length ? rules : ["No intervention: both paths use the same assumptions."])
+      .map(rule => `<li>${esc(rule)}</li>`).join("");
+    const growthNotes = [`Both paths assume ${fmt(b.admissionsGrowthPercent)}% annual growth in planned funded PhD starts, beginning after year 1. Applicants and job openings do not grow automatically.`];
+    const limited = outputs.baseline.rows.find((row, i) => row.year > 0 &&
+      Math.max(row.fundedAdmissions, outputs.alternative.rows[i].fundedAdmissions) > row.applicantsThisYear + 1e-6);
+    if (limited)
+      growthNotes.push(`From year ${limited.year}, at least one path has more funded starts than applicants. Actual admissions cannot exceed ${fmt(b.applicants)} applicants per year; adjust the separate applicant assumption to explore more demand.`);
+    $("growth-note").textContent = growthNotes.join(" ");
+    const notes = [];
+    if (!rules.length) notes.push("Both scenarios are identical.");
+    else notes.push(`The change starts after year ${p.policyStart}.`);
+    const firstStart = outputs.alternative.rows.find(r => Math.abs(r.entrants - outputs.baseline.rows[r.year].entrants) > 1e-6);
+    const firstGraduate = outputs.alternative.rows.find(r => Math.abs(r.graduatesThisYear - outputs.baseline.rows[r.year].graduatesThisYear) > 1e-6);
+    if (firstGraduate)
+      notes.push(`New starts first differ in year ${firstStart.year}; doctorate completions first differ in year ${firstGraduate.year}. Existing students finish.`);
+    else if (firstStart) notes.push(`Changed starts have not reached completion by year ${p.horizon}.`);
+    if (p.staffPositions) notes.push("Staff positions are a total, not that many new openings every year.");
+    $("mechanism-timing").textContent = notes.join(" ");
+  }
+  function renderAnnualTable() {
+    const keys = ["applicantsThisYear", "plannedAdmissions", "fundedAdmissions", "entrants", "notAdmittedThisYear",
+      "graduatesThisYear", "academicOpenings", "academicHires", "relatedOpenings", "relatedHires", "otherHires"];
+    const labels = keys.map(k => ({
+      applicantsThisYear: "New PhD applicants",
+      plannedAdmissions: "Planned annual starts before staff transfer",
+      fundedAdmissions: "Funded annual PhD starts", entrants: "New PhD admissions",
+      notAdmittedThisYear: "Not admitted this year", graduatesThisYear: "Doctorates completed",
+      academicOpenings: "Continuing academic openings", academicHires: "Continuing academic hires",
+      relatedOpenings: "Related job openings", relatedHires: "Related job placements", otherHires: "Other-career placements"
+    })[k]);
+    $("annual-table").innerHTML = table(["Year", "Scenario", ...labels], outputs.alternative.rows.flatMap((r, i) =>
+      ["baseline", "alternative"].map(arm => [r.year, arm, ...keys.map(k =>
+        r.year === 0 || outputs[arm].rows[i][k] === null ? "n/a" : fmt(outputs[arm].rows[i][k]))])
+    ), "Annual flows and available capacity. Year 0 has no preceding annual interval. The same person can cross different boundaries in a year, so these columns must not all be added together. The CSV also contains career-stage headcounts.");
+  }
+  function render() {
+    const a = outputs.alternative.rows.at(-1);
+    $("reasons-table").innerHTML = table(["Current destination", "Chose to leave academic route", "Academic search unsuccessful"], [
+      ["Related work outside academia", fmt(a.destinations.choice.R), fmt(a.destinations.blocked.R)],
+      ["Other careers", fmt(a.destinations.choice.O), fmt(a.destinations.blocked.O)],
+      ["Still seeking outside work", fmt(a.destinations.choice.Q), fmt(a.destinations.blocked.Q)]
+    ], `Alternative only, year ${a.year}; cumulative departures partitioned by current destination. People still seeking an academic role are excluded.`);
+    $("boundary-note").textContent = `Leaving academia and leaving astronomy-related work are different boundaries. ${fmt(a.astronomyBlocked)} people are in other work after an unsuccessful search for related work; some first left academia by choice. PhD nonadmission is separate from these job-search outcomes. These motives are assumptions inside the simulation.`;
+    renderPlots();
+    renderMechanism(); renderAnnualTable();
+  }
+  function exportCSV() {
+    const metrics = ["year", ...Object.keys(M.roles), "doctoralTarget", "enrollmentAboveTarget", "applicantsThisYear",
+      "plannedAdmissions", "fundedAdmissions", "entrants", "notAdmittedThisYear", "graduatesThisYear", "academicApplicants", "academicOpenings", "academicHires",
+      "academicBlocked", "academicChoice", "astronomyBlocked", "relatedOpenings", "relatedHires", "otherHires", "entered", "applied", "total"];
+    const keys = Object.keys(M.defaults), headers = ["scenario", ...metrics, ...keys.map(k => "assumption_" + k), "status"];
+    const rows = [headers];
+    for (const arm of ["baseline", "alternative"]) for (const r of outputs[arm].rows)
+      rows.push([arm, ...metrics.map(k => r[k]), ...keys.map(k => params[arm][k]), "illustrative_partial_cohort_not_forecast"]);
+    const csv = rows.map(row => row.map(cell => '"' + String(cell === null ? "" : cell).replace(/"/g, '""') + '"').join(",")).join("\r\n");
+    const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+    const link = document.createElement("a"); link.href = url; link.download = "astronomy-career-bottlenecks.csv";
+    document.body.appendChild(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+  buildControls();
+  $("show-baseline").onchange = renderPlots;
+  window.addEventListener("resize", renderPlots);
+  $("policy-start").onchange = event => {
+    const n = Number(event.target.value);
+    if (!event.target.value || !Number.isInteger(n) || n < 1 || n > 10) {
+      $("error").textContent = "Choose a whole-number policy start from 1 to 10."; $("error").hidden = false; return;
+    }
+    state.shared.policyStart = n; recompute();
+  };
+  $("horizon").onchange = event => {
+    state.shared.horizon = Number(event.target.value); recompute();
+  };
+  $("baseline-only").onclick = () => applyCase(null);
+  $("reset").onclick = () => {
+    state = fresh(); state.knobs.staffPositions = 100;
+    $("show-baseline").checked = true;
+    recompute();
+  };
+  $("export").onclick = exportCSV;
+  recompute();
+  window.SimpleApp = {
+    get state() { return JSON.parse(JSON.stringify(state)); },
+    get outputs() { return outputs; }, get params() { return params; }, applyCase
+  };
+})();
+</script>
+</body>
+</html>
